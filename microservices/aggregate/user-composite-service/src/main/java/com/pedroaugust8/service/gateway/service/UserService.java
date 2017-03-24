@@ -11,6 +11,7 @@ import com.pedroaugust8.common.models.User;
 
 public interface UserService {
   @RequestLine("GET /users")
+  @CrossOrigin
   List<User> list();
 
   @RequestLine("GET /users/{id}")
